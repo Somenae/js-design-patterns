@@ -2,13 +2,6 @@ import Additif from "./Additif.js";
 import Allegerne from "./Allergene.js";
 import Ingredient from "./Ingredient.js";
 
-const unites = {
-    MICRO_GRAMMES: 'microgrammes',
-    MILLI_GRAMMES: 'milligrammes',
-};
-
-Object.freeze(unites);
-
 export default class ElementFactory {
     static creer(nom, valeur, unite) {
         switch (nom) {
